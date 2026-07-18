@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Portfolio of Abhinav Chaudhari, a .NET and ERP developer building dependable applications with C#, SQL Server, React, and ASP.NET."
+    >
+    <meta name="theme-color" content="#f6f7fb">
+    <title>Abhinav Chaudhari | .NET &amp; ERP Developer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%236c4cff'/%3E%3Cpath d='M17 45 27.5 18h9L47 45h-8l-2-6H27l-2 6h-8Zm12-13h6l-3-9-3 9Z' fill='white'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("portfolio-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Abhinav Chaudhari, home">
+          <span class="brand-mark">AC</span>
+          <span>Abhinav<span class="brand-dot">.</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Applications</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Change theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.7 15.2A9 9 0 0 1 8.8 3.3 9 9 0 1 0 20.7 15.2Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Open to .NET opportunities</div>
+          <h1 id="hero-title">I build software that keeps <span>real work moving.</span></h1>
+          <p class="hero-intro">
+            I’m <strong>Abhinav Chaudhari</strong>, a .NET developer focused on education and business ERP systems—turning complex workflows into reliable, easy-to-use applications.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore my work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="button button-secondary" href="#contact">Let’s connect</a>
+          </div>
+          <ul class="hero-stats" aria-label="Career highlights">
+            <li><strong>2+</strong><span>Years building<br>production software</span></li>
+            <li><strong>6+</strong><span>ERP modules<br>delivered</span></li>
+            <li><strong>Full stack</strong><span>Database to<br>interface</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="code-window">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>developer.profile.cs</span>
+              <span class="window-status">● ready</span>
+            </div>
+            <pre><code><span class="code-purple">public class</span> <span class="code-blue">Developer</span>
+{
+  <span class="code-purple">public string</span> Name <span class="code-pink">=&gt;</span>
+    <span class="code-green">"Abhinav Chaudhari"</span>;
+
+  <span class="code-purple">public string[]</span> Stack <span class="code-pink">=&gt;</span>
+  [
+    <span class="code-green">".NET / C#"</span>,
+    <span class="code-green">"SQL Server"</span>,
+    <span class="code-green">"React"</span>,
+    <span class="code-green">"ERP Systems"</span>
+  ];
+
+  <span class="code-purple">public bool</span> ShipsValue <span class="code-pink">=&gt;</span> <span class="code-orange">true</span>;
+}</code></pre>
+            <div class="tech-ribbon" aria-hidden="true">
+              <span>.NET</span><span>SQL</span><span>React</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">01 / Experience</p><h2 id="experience-title">Built around real workflows.</h2></div>
+          <p>I work across database design, business logic, reporting, and responsive interfaces to deliver complete features—not isolated pieces.</p>
+        </div>
+
+        <article class="experience-card reveal">
+          <div class="experience-meta">
+            <span class="experience-year">2024 — Present</span>
+            <span class="experience-company">Dotcom Infotech Pvt. · India</span>
+          </div>
+          <div class="experience-content">
+            <div class="role-heading">
+              <div class="role-icon" aria-hidden="true">&lt;/&gt;</div>
+              <div><h3>.NET Software Developer</h3><p>Education ERP &amp; business applications</p></div>
+            </div>
+            <div class="experience-grid">
+              <p>Developing and maintaining production modules used by colleges and educational institutions, from admissions and attendance to examination and finance workflows.</p>
+              <ul class="check-list">
+                <li>Delivered end-to-end ASP.NET Web Forms features with C# and SQL Server.</li>
+                <li>Designed stored procedures, reporting queries, validations, and data workflows.</li>
+                <li>Modernized legacy screens with responsive Bootstrap and JavaScript interfaces.</li>
+                <li>Resolved production issues across ERP, Crystal Reports, and integrations.</li>
+              </ul>
+            </div>
+            <div class="chip-row">
+              <span>C#</span><span>ASP.NET</span><span>SQL Server</span><span>JavaScript</span><span>Bootstrap</span><span>Crystal Reports</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div><p class="section-kicker">02 / Featured applications</p><h2 id="projects-title">Systems designed to be used.</h2></div>
+            <p>Selected applications from my professional work across examination, inventory, and financial management.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-featured reveal">
+              <div class="project-copy">
+                <div class="project-number">01</div>
+                <p class="project-type">Current project · Featured</p>
+                <h3>Exam Management System</h3>
+                <p>An education ERP module for managing the examination lifecycle—from timetable preparation and marks entry to backlog processing, verification, and result generation.</p>
+                <ul class="project-highlights">
+                  <li>Exam timetable and conflict handling</li>
+                  <li>Internal, external, and backlog marks</li>
+                  <li>Result processing and verification reports</li>
+                </ul>
+                <div class="chip-row"><span>ASP.NET</span><span>C#</span><span>SQL Server</span><span>Crystal Reports</span></div>
+              </div>
+              <div class="project-art campus-art" aria-hidden="true">
+                <div class="mini-window">
+                  <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+                  <div class="mini-content">
+                    <div class="mini-header"></div>
+                    <div class="mini-metrics"><i></i><i></i><i></i></div>
+                    <div class="mini-chart"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="mini-table"><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">02</div>
+              <div class="project-icon icon-orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z"></path><path d="m4 7.5 8 4.5 8-4.5M12 12v9"></path></svg>
+              </div>
+              <p class="project-type">Inventory &amp; procurement</p>
+              <h3>Store Management System</h3>
+              <p>Tracks stock inward and outward movement, supplier bills, tax-aware valuation, verification, and department-level reporting.</p>
+              <details>
+                <summary>What I worked on <span>+</span></summary>
+                <p>SQL views, weighted valuation logic, GST calculations, department reporting, and inward/outward workflows.</p>
+              </details>
+              <div class="chip-row"><span>ASP.NET</span><span>C#</span><span>SQL Server</span><span>Reporting</span></div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">03</div>
+              <div class="project-icon icon-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19h16M6 16V8m4 8V5m4 11v-6m4 6V3"></path></svg>
+              </div>
+              <p class="project-type">Finance &amp; accounting</p>
+              <h3>Accounts Management System</h3>
+              <p>An accounts ERP covering vouchers, daybook, ledgers, receipt and payment reports, and financial-year opening balances.</p>
+              <details>
+                <summary>What I worked on <span>+</span></summary>
+                <p>Stored procedures, financial-year workflows, account filters, opening/closing calculations, and audit-friendly reporting.</p>
+              </details>
+              <div class="chip-row"><span>.NET</span><span>SQL Server</span><span>Stored Procedures</span><span>Financial Logic</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">03 / Technical skills</p><h2 id="skills-title">A practical full-stack toolkit.</h2></div>
+          <p>Strongest in .NET and SQL Server, with the frontend and reporting skills needed to take business features all the way to production.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-label"><span>01</span><h3>Backend</h3></div>
+            <ul><li>C#</li><li>ASP.NET Web Forms</li><li>ASP.NET Core</li><li>Web APIs</li><li>Entity Framework Core</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-label"><span>02</span><h3>Data</h3></div>
+            <ul><li>SQL Server</li><li>T-SQL</li><li>Stored Procedures</li><li>Views &amp; Joins</li><li>Query Optimization</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-label"><span>03</span><h3>Frontend</h3></div>
+            <ul><li>React</li><li>JavaScript</li><li>HTML &amp; CSS</li><li>Bootstrap</li><li>Responsive UI</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-label"><span>04</span><h3>Tools &amp; reports</h3></div>
+            <ul><li>Visual Studio</li><li>Git</li><li>Crystal Reports</li><li>Postman</li><li>SSMS</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="section-kicker">04 / Contact</p>
+            <h2 id="contact-title">Have a role or project in mind?</h2>
+            <p>I’m interested in .NET development opportunities where I can solve meaningful business problems, learn fast, and ship dependable software.</p>
+          </div>
+          <div class="contact-actions">
+            <!-- Replace this placeholder address with your real email. -->
+            <a class="button button-light" href="mailto:abhinavchaudhary283@gmail.com">abhinavchaudhary283@gmail.com</a>
+            <button class="copy-button" type="button" data-copy="abhinavchaudhary283@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="2"></rect><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path></svg>
+              <span>Copy email</span>
+            </button>
+          </div>
+          <nav class="contact-links" aria-label="Social links">
+            <!-- Replace # with your real profile URLs. -->
+            <a target="_blank" href="https://www.linkedin.com/in/abhinav-chaudhari?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn <span>↗</span></a>
+            <a target="_blank" href="https://github.com/abhinav-chaudhari">GitHub <span>↗</span></a>
+            <a href="#top">Back to top <span>↑</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="current-year"></span> Abhinav Chaudhari. Built with care and curiosity.</p>
+      <p>Designed for people, powered by <span class="footer-code">&lt;code&gt;</span>.</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
